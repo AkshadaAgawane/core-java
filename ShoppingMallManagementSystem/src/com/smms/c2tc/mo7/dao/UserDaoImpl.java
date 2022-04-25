@@ -36,6 +36,12 @@ public class UserDaoImpl implements UserDao {
 		
 		
 	}
+	@Override
+	public User getUser(int id) {
+		User u=entityManager.find(User.class,id);
+		return null;
+	}
+	
 	
 		
 		

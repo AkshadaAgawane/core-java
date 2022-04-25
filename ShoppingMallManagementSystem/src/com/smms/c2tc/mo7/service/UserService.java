@@ -12,6 +12,12 @@ public interface UserService {
     
     boolean logout();
 
+	void deleteUser(long id);
+
+	User getUser(int i);
+
+	
+
 	
 
 

@@ -1,25 +1,21 @@
-package com.smms.c2tc.mo7.entity;
+package com.smms.c2tc.m07.entity;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
-@Table (name= "Details")
 public class User {
 	@Id
-	private long Id;
-	@Column(name ="name")
+	private long id;
 	private String name;
 	private String type;
 	private String password;
 	
 	public long getId() {
-		return Id;
+		return id;
 	}
 	public void setId(long id) {
-		Id = id;
+		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -41,9 +37,10 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [Id=" + Id + ", name=" + name + ", type=" + type + ", password=" + password + "]";
+		return "User [id=" + id + ", name=" + name + ", type=" + type + ", password=" + password + "]";
 	}
 	
-	}
 	
-
+	
+	
+}

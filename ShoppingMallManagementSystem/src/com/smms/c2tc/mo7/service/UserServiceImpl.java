@@ -32,6 +32,21 @@ public class UserServiceImpl implements UserService {
 		return false;
 	}
 	
+	@Override
+	public void deleteUser(long id) {
+		ud.startTransaction();
+		ud.deleteUser(id);
+		ud.endTransaction();
+		
+	}
+	@Override
+	public User getUser(int id) {
+		User u=ud.getUser(id);
+		return u;
+	}
+	
+	
+	
 	
 		
 	}

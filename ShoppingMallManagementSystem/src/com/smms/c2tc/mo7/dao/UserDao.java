@@ -14,5 +14,9 @@ public interface UserDao {
 
 	void endTransaction();
 
+	User getUser(int i);
+
+	
+
 	
 }
